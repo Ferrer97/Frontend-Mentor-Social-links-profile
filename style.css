@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* GLobal variables */
+:root {
+  --bg-color: hsl(0, 0%, 8%);
+  --main-color: hsl(0, 0%, 12%);
+  --secondary-color: hsl(0, 0%, 20%);
+  --white-color: hsl(0, 0%, 100%);
+  --green-color: hsl(75, 94%, 57%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "inter", sans-serif;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: var(--main-color);
+  margin: 2.1rem auto;
+}
+
+.card__image {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 25%;
+}
+
+.card__name {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.card__location {
+  color: var(--green-color);
+  text-align: center;
+  font-weight: 700;
+}
+
+.card__text {
+  font-weight: 400;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.card__social {
+  text-align: center;
+  border-radius: 1.2rem;
+  display: block;
+  font-weight: 600;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 1.2rem;
+  margin: 1.1rem 0 ;
+}
+
+.card__social:hover {
+  background-color: var(--green-color);
+  cursor: pointer;
+  transition: 0.5s;
+  color: var(--bg-color);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
